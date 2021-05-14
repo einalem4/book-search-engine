@@ -4,7 +4,7 @@
 
 ## Description:
 
-A react single-page application portfolio to showcase information about myself, my portfolio, a way to contact me and a place for individuals to download my resume
+A book search engine where you can search for books, sign up/login, save your favorite books or remove books from your list of saved books.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

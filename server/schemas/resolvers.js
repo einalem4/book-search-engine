@@ -38,6 +38,8 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+
+    //save books
     saveBook: async (parent, { bookData }, context) => {
       if (context.user) {
         const updatedUser = await User.findByIdAndUpdate(
@@ -51,6 +53,8 @@ const resolvers = {
 
       throw new AuthenticationError('You need to be logged in!');
     },
+
+    // remove books
     removeBook: async (parent, { bookId }, context) => {
       if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
